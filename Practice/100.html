@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>practice</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    img{
+        height: 585px;
+        width: 340px;
+    }
+    .form-container{
+        background-color: #454444;
+        color: #ffffff;
+        padding: 40px 50px;
+        border-radius: 20px;
+        width: 300px;
+        box-shadow: 0 4px 10px rgba(0,0, 0,0.2);
+        text-align: center;
+        font-weight: bolder;
+    }
+    .form-container h2{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .progress-bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .progress-bar div{
+        width: 30px;
+        height: 26px;
+        background: #fff;
+        color: #000;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-weight: bold;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .progress-bar div.active{
+        background: #8ef98e;
+        color: #191818;
+    }
+    form label{
+        font-size: 14px;
+        margin-bottom: 5px;
+        display: block;
+        text-align: left;
+    }
+    form input{
+        width: 100%;
+        padding: 8px 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 4px;
+        box-shadow:  0 2px 4px rgba(0,0,0,0.2);
+    }
+    .button-group{
+        display: flex;
+        justify-content: space-between;
+    }
+    .button-group button{
+        width: 45%;
+        padding: 10px;
+        margin: 13px;
+        border: none;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        color: #050404;
+    }
+    .button-group button:hover{
+        background: aqua;
+        transition: 0.5s ease;        
+        
+    }
+</style>
+<body background="new.jpg">
+    
+    <img src="aabb.png" alt="">
+<div class="form-container">
+    <div class="progress-bar">
+    <div class="active">1</div>
+    <div class="active">2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+</div>
+<form>
+    <label for="dob">Date of Birth :</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="place">Place of Birth :</label>
+    <input type="text" id="place" name="place" placeholder="Enter your place of birth" required>
+    <label for="place">Hospital of Birth :</label>
+    <input type="text" id="place" name="place" placeholder="Enter your Hospital of birth" required>
+    <label for="place">Doctor Name :</label>
+    <input type="text" id="place" name="place" placeholder="Enter your Doctor Name" required>
+    <label for="place">Direction of Floor</label>
+    <input type="text" id="place" name="place" placeholder="Enter your Direction of Floor" required>
+<div class="button-group">
+<button type="button" class="back">back</button>
+<button type="button" class="back">button</button>
+<button type="button" class="home">Home</button>
+</div>
+</form>
+</body>
+</html>
